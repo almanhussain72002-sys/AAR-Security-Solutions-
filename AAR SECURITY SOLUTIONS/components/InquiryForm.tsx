@@ -32,9 +32,9 @@ export function InquiryForm({ compact = false }: InquiryFormProps) {
   }
 
   const inputClass =
-    "peer h-12 w-full rounded-2xl border border-black/10 bg-white px-4 pt-4 text-sm outline-none transition placeholder:text-transparent focus:border-electric focus:ring-4 focus:ring-electric/10";
+    "dark-input peer h-12 w-full rounded-2xl px-4 pt-4 text-sm outline-none transition placeholder:text-transparent";
   const labelClass =
-    "pointer-events-none absolute left-4 top-1.5 text-[11px] font-medium text-ink/46 transition peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[11px] peer-focus:text-electric";
+    "pointer-events-none absolute left-4 top-1.5 text-[11px] font-medium text-white/46 transition peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-focus:top-1.5 peer-focus:text-[11px] peer-focus:text-electric";
 
   return (
     <form onSubmit={onSubmit} className={`grid gap-4 ${compact ? "" : "md:grid-cols-2"}`}>
@@ -51,7 +51,7 @@ export function InquiryForm({ compact = false }: InquiryFormProps) {
       ))}
 
       <label className="relative block">
-        <select className={`${inputClass} pt-3 text-ink/72`} name="propertyType" defaultValue="">
+        <select className={`${inputClass} pt-3 text-white/82`} name="propertyType" defaultValue="">
           <option value="" disabled>
             Property Type
           </option>
@@ -64,7 +64,7 @@ export function InquiryForm({ compact = false }: InquiryFormProps) {
       </label>
 
       <label className="relative block">
-        <select className={`${inputClass} pt-3 text-ink/72`} name="serviceRequired" defaultValue="">
+        <select className={`${inputClass} pt-3 text-white/82`} name="serviceRequired" defaultValue="">
           <option value="" disabled>
             Service Required
           </option>
@@ -76,7 +76,7 @@ export function InquiryForm({ compact = false }: InquiryFormProps) {
 
       <label className={`relative block ${compact ? "" : "md:col-span-2"}`}>
         <textarea
-          className="peer min-h-28 w-full rounded-2xl border border-black/10 bg-white px-4 pt-6 text-sm outline-none transition placeholder:text-transparent focus:border-electric focus:ring-4 focus:ring-electric/10"
+          className="dark-input peer min-h-28 w-full rounded-2xl px-4 pt-6 text-sm outline-none transition placeholder:text-transparent"
           name="message"
           placeholder="Message"
         />
@@ -87,7 +87,7 @@ export function InquiryForm({ compact = false }: InquiryFormProps) {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="inline-flex min-h-12 items-center justify-center rounded-full bg-navy px-7 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#083076] disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex min-h-12 items-center justify-center rounded-full bg-navy px-7 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-[#0071E3] disabled:cursor-not-allowed disabled:opacity-70"
         >
           {status === "sending" ? "Submitting..." : "Submit Inquiry"}
         </button>

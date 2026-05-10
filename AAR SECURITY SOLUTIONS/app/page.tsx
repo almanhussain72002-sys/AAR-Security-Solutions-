@@ -27,13 +27,13 @@ export default function HomePage() {
       <section className="premium-gradient min-h-screen pb-16 pt-32 md:pt-36">
         <div className="section-shell grid min-h-[calc(100vh-160px)] items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="fade-up">
-            <p className="inline-flex rounded-full border border-electric/20 bg-white/70 px-4 py-2 text-sm font-semibold text-navy shadow-sm">
+            <p className="eyebrow-pill inline-flex rounded-full px-4 py-2 text-sm font-semibold">
               Premium security and smart technology company in Karnataka
             </p>
             <h1 className="mt-7 max-w-4xl text-5xl font-semibold leading-[0.98] tracking-tight text-ink md:text-7xl xl:text-[78px]">
               Smart Security Solutions for Modern Homes & Businesses
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/66 md:text-xl">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/66 md:text-xl">
               End-to-end security, automation, surveillance, networking, and smart technology solutions across Mangalore
               and Karnataka.
             </p>
@@ -43,36 +43,36 @@ export default function HomePage() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex min-h-12 items-center justify-center rounded-full border border-black/10 bg-white px-6 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:border-electric/40 hover:text-navy hover:shadow-premium"
+                className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/6 px-6 text-sm font-semibold text-white backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-electric/60 hover:bg-electric/10 hover:shadow-premium"
               >
                 WhatsApp Now
               </a>
             </div>
           </div>
-          <div className="relative aspect-[16/9] overflow-hidden rounded-[28px] bg-[#EAF2FF] shadow-premium fade-in">
+          <div className="relative aspect-[16/9] overflow-hidden rounded-[28px] border border-white/12 bg-mist shadow-premium fade-in">
             <Image
               src="/images/home-hero-security.jpg"
               alt="Premium smart security installation by AAR Security Solutions"
               fill
               priority
-              className="object-cover"
+              className="object-cover brightness-[0.82] contrast-[1.08] saturate-[1.05]"
             />
           </div>
         </div>
       </section>
 
-      <section className="border-y border-black/5 bg-white py-6">
+      <section className="dark-section border-y border-white/8 py-6">
         <div className="section-shell grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {trustBadges.map((badge) => (
-            <div key={badge} className="flex items-center gap-3 rounded-2xl bg-mist px-4 py-4">
+            <div key={badge} className="glass-card flex items-center gap-3 rounded-2xl px-4 py-4">
               <BadgeCheck className="text-electric" size={20} />
-              <span className="text-sm font-semibold text-ink/76">{badge}</span>
+              <span className="text-sm font-semibold text-white/76">{badge}</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell">
           <SectionHeading
             eyebrow="Services"
@@ -92,7 +92,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-mist py-20 md:py-28">
+      <section className="dark-section-alt py-20 md:py-28">
         <div className="section-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionHeading
             align="left"
@@ -109,16 +109,16 @@ export default function HomePage() {
               "Transparent recommendations",
               "AMC and upgrade support"
             ].map((item) => (
-              <div key={item} className="rounded-[18px] bg-white p-5 shadow-[0_12px_45px_rgba(10,42,102,0.06)]">
+              <div key={item} className="glass-card rounded-[18px] p-5">
                 <CheckCircle2 className="text-electric" size={22} />
-                <p className="mt-4 font-semibold text-ink">{item}</p>
+                <p className="mt-4 font-semibold text-white">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell">
           <SectionHeading eyebrow="Industries" title="Built for homes, businesses, and institutions." />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -126,7 +126,7 @@ export default function HomePage() {
               <Link
                 key={name}
                 href="/industries"
-                className="group rounded-[20px] border border-black/6 bg-white p-7 shadow-[0_14px_55px_rgba(10,42,102,0.07)] transition hover:-translate-y-1 hover:shadow-premium"
+                className="glass-card group rounded-[20px] p-7 transition hover:-translate-y-1 hover:border-electric/40 hover:shadow-premium"
               >
                 <Icon className="text-navy" size={30} />
                 <h3 className="mt-5 text-xl font-semibold">{name}</h3>
@@ -139,7 +139,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-mist py-20 md:py-28">
+      <section className="dark-section-alt py-20 md:py-28">
         <div className="section-shell">
           <SectionHeading eyebrow="Projects" title="Featured security transformations." />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -148,10 +148,10 @@ export default function HomePage() {
               ["Office Access Control", "Biometric entry, attendance visibility, and restricted area control."],
               ["Villa Smart Automation", "Smart lighting, security, door lock, and Wi-Fi coverage integration."]
             ].map(([title, text]) => (
-              <div key={title} className="rounded-[20px] bg-white p-7 shadow-[0_14px_55px_rgba(10,42,102,0.07)]">
+              <div key={title} className="glass-card rounded-[20px] p-7">
                 <Sparkles className="text-electric" size={24} />
                 <h3 className="mt-5 text-xl font-semibold">{title}</h3>
-                <p className="mt-3 text-sm leading-6 text-ink/62">{text}</p>
+                <p className="mt-3 text-sm leading-6 text-white/62">{text}</p>
               </div>
             ))}
           </div>
@@ -160,7 +160,7 @@ export default function HomePage() {
 
       <CTASection />
 
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <SectionHeading
             align="left"
@@ -174,8 +174,8 @@ export default function HomePage() {
               "The smart lock and video door phone installation made our home entry much easier.",
               "Their team explained the options clearly and helped us choose the right system."
             ].map((quote) => (
-              <blockquote key={quote} className="rounded-[20px] border border-black/6 bg-white p-6 shadow-[0_14px_55px_rgba(10,42,102,0.06)]">
-                <p className="text-lg leading-8 text-ink/74">"{quote}"</p>
+              <blockquote key={quote} className="glass-card rounded-[20px] p-6">
+                <p className="text-lg leading-8 text-white/74">"{quote}"</p>
                 <footer className="mt-4 text-sm font-semibold text-navy">AAR Customer</footer>
               </blockquote>
             ))}
@@ -183,7 +183,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-mist py-20 md:py-28">
+      <section className="dark-section-alt py-20 md:py-28">
         <div className="section-shell">
           <SectionHeading eyebrow="FAQ" title="Clear answers before your site inspection." />
           <div className="mx-auto mt-10 grid max-w-3xl gap-4">
@@ -192,27 +192,27 @@ export default function HomePage() {
               ["Can you integrate CCTV with mobile viewing?", "Yes. We configure remote viewing and explain how to monitor your system securely."],
               ["Do you provide warranty and support?", "Yes. Warranty depends on selected products, and AMC support is available for long-term maintenance."]
             ].map(([q, a]) => (
-              <details key={q} className="rounded-[18px] bg-white p-6 shadow-[0_14px_55px_rgba(10,42,102,0.06)]">
-                <summary className="cursor-pointer text-lg font-semibold text-ink">{q}</summary>
-                <p className="mt-3 text-sm leading-6 text-ink/64">{a}</p>
+              <details key={q} className="glass-card rounded-[18px] p-6">
+                <summary className="cursor-pointer text-lg font-semibold text-white">{q}</summary>
+                <p className="mt-3 text-sm leading-6 text-white/64">{a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-electric">Contact</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-5xl">Book your free site inspection.</h2>
-            <p className="mt-5 text-lg leading-8 text-ink/64">
+            <p className="mt-5 text-lg leading-8 text-white/64">
               Phone: {company.phone}
               <br />
               Location: {company.location}
             </p>
           </div>
-          <div className="rounded-[24px] bg-mist p-5 md:p-8">
+          <div className="glass-card rounded-[24px] p-5 md:p-8">
             <InquiryForm />
           </div>
         </div>

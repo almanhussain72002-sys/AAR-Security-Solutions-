@@ -13,11 +13,11 @@ export function CTASection() {
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-white/72">
             Book a site inspection for CCTV, smart locks, access control, automation, networking, fire alarm, or guard
-            monitoring solutions in Mangalore and Karnataka.
+            smart guard patrol solutions in Mangalore and Karnataka.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
-          <ButtonLink href="/request-quote" variant="secondary" className="bg-white">
+          <ButtonLink href="/request-quote" variant="secondary">
             Get Free Site Inspection
           </ButtonLink>
           <a

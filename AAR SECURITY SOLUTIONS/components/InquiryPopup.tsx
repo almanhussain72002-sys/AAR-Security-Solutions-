@@ -34,21 +34,21 @@ export function InquiryPopup() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-[60] grid place-items-center bg-ink/35 px-4 backdrop-blur-xl fade-in" role="dialog" aria-modal="true">
-      <div className="relative w-full max-w-2xl rounded-[28px] bg-white p-6 shadow-[0_30px_100px_rgba(0,0,0,0.24)] md:p-8">
+    <div className="fixed inset-0 z-[60] grid place-items-center bg-black/62 px-4 backdrop-blur-2xl fade-in" role="dialog" aria-modal="true">
+      <div className="glass-card relative w-full max-w-2xl rounded-[28px] p-6 md:p-8">
         <button
           type="button"
           onClick={close}
           aria-label="Close inquiry form"
-          className="absolute right-5 top-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-mist text-ink transition hover:bg-ink hover:text-white"
+          className="absolute right-5 top-5 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/8 text-white transition hover:bg-electric/20"
         >
           <X size={18} />
         </button>
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-electric">Free site inspection</p>
-        <h2 className="mt-3 max-w-xl text-3xl font-semibold tracking-tight text-ink md:text-4xl">
+        <h2 className="mt-3 max-w-xl text-3xl font-semibold tracking-tight text-white md:text-4xl">
           Secure your property with a tailored AAR solution.
         </h2>
-        <p className="mt-3 max-w-xl text-sm leading-6 text-ink/62">
+        <p className="mt-3 max-w-xl text-sm leading-6 text-white/62">
           Tell us what you need. Our team will help you choose the right security, automation, or networking setup.
         </p>
         <div className="mt-6">

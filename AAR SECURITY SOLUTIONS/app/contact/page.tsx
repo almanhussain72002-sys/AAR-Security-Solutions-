@@ -20,18 +20,18 @@ export default function ContactPage() {
           />
         </div>
       </section>
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-          <div className="rounded-[24px] bg-mist p-8">
+          <div className="glass-card rounded-[24px] p-8">
             <h2 className="text-2xl font-semibold">AAR Security Solutions</h2>
-            <p className="mt-3 text-ink/64">{company.tagline}</p>
-            <div className="mt-8 space-y-3 text-sm text-ink/70">
+            <p className="mt-3 text-white/64">{company.tagline}</p>
+            <div className="mt-8 space-y-3 text-sm text-white/70">
               <p>Phone: {company.phone}</p>
               <p>Location: {company.location}</p>
               <p>Coverage: Mangalore and Karnataka</p>
             </div>
           </div>
-          <div className="rounded-[24px] bg-mist p-5 md:p-8">
+          <div className="glass-card rounded-[24px] p-5 md:p-8">
             <InquiryForm />
           </div>
         </div>

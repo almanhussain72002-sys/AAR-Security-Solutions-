@@ -5,6 +5,7 @@ static-html/index.html
 
 Replace these files with your own real assets:
 - assets/aar-logo.png
+- assets/aar-logo-wide.png
 - assets/images/home-hero-security.jpg
 - assets/images/og-aar-security.jpg
 - assets/images/services/*.jpg

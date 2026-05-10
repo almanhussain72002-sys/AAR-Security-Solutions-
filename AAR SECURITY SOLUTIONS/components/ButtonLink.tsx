@@ -11,10 +11,10 @@ type ButtonLinkProps = {
 export function ButtonLink({ href, children, variant = "primary", className = "" }: ButtonLinkProps) {
   const styles = {
     primary:
-      "bg-navy text-white shadow-glow hover:-translate-y-0.5 hover:bg-[#083076] hover:shadow-[0_22px_55px_rgba(30,144,255,0.32)]",
+      "bg-navy text-white shadow-glow hover:-translate-y-0.5 hover:bg-[#0071E3] hover:shadow-[0_28px_80px_rgba(10,132,255,0.42)]",
     secondary:
-      "border border-black/10 bg-white text-ink hover:-translate-y-0.5 hover:border-electric/40 hover:text-navy hover:shadow-premium",
-    dark: "bg-ink text-white hover:-translate-y-0.5 hover:bg-navy hover:shadow-glow"
+      "border border-white/15 bg-white/6 text-white backdrop-blur-xl hover:-translate-y-0.5 hover:border-electric/60 hover:bg-electric/10 hover:shadow-premium",
+    dark: "bg-white text-[#05070D] hover:-translate-y-0.5 hover:bg-electric hover:text-white hover:shadow-glow"
   };
 
   return (

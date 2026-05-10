@@ -22,7 +22,7 @@ export default function ServicesPage() {
           />
         </div>
       </section>
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <ServiceCard key={service.slug} service={service} />

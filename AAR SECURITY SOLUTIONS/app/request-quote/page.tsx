@@ -19,8 +19,8 @@ export default function RequestQuotePage() {
           />
         </div>
       </section>
-      <section className="py-20 md:py-28">
-        <div className="section-shell max-w-4xl rounded-[28px] bg-mist p-5 md:p-8">
+      <section className="dark-section py-20 md:py-28">
+        <div className="glass-card section-shell max-w-4xl rounded-[28px] p-5 md:p-8">
           <InquiryForm />
         </div>
       </section>

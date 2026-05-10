@@ -18,10 +18,10 @@ export function Footer() {
       <div className="section-shell grid gap-10 py-14 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <Image
-            src="/aar-logo.png"
+            src="/aar-logo-wide.png"
             alt="AAR Security Solutions logo"
-            width={190}
-            height={190}
+            width={230}
+            height={96}
             className="mb-5 h-14 w-auto rounded-lg object-contain"
           />
           <p className="text-2xl font-semibold">{company.name}</p>

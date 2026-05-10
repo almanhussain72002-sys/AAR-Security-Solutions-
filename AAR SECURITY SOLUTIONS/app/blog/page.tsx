@@ -22,17 +22,17 @@ export default function BlogPage() {
           <SectionHeading eyebrow="Blog" title="Security insights for modern properties." />
         </div>
       </section>
-      <section className="py-20 md:py-28">
+      <section className="dark-section py-20 md:py-28">
         <div className="section-shell grid gap-6 md:grid-cols-3">
           {posts.map(([title, text]) => (
             <Link
               key={title}
               href="/contact"
-              className="group rounded-[20px] bg-white p-7 shadow-[0_14px_55px_rgba(10,42,102,0.08)] transition hover:-translate-y-1 hover:shadow-premium"
+              className="glass-card group rounded-[20px] p-7 transition hover:-translate-y-1 hover:border-electric/40 hover:shadow-premium"
             >
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-electric">Guide</p>
               <h2 className="mt-4 text-2xl font-semibold">{title}</h2>
-              <p className="mt-3 text-sm leading-6 text-ink/64">{text}</p>
+              <p className="mt-3 text-sm leading-6 text-white/64">{text}</p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-navy">
                 Talk to AAR <ArrowRight size={16} className="transition group-hover:translate-x-1" />
               </span>
